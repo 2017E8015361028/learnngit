@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ServiceStack.Redis;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace ConsoleApp1
 {
@@ -24,6 +25,7 @@ namespace ConsoleApp1
                 string redis_port = "2335";
                 string redis_password = "sogoufanyiapp2020";
                 RedisUtils redis = new RedisUtils(redis_server, int.Parse(redis_port), redis_password);
+                Console.WriteLine("111111111111111111111111111111111111111");
                 while (true)
                 {
                     string one_json = redis.redis_client.PopItemFromList("testDocTranslateFileJsonList");
