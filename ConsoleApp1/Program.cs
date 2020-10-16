@@ -26,6 +26,7 @@ namespace ConsoleApp1
                 string redis_password = "sogoufanyiapp2020";
                 RedisUtils redis = new RedisUtils(redis_server, int.Parse(redis_port), redis_password);
                 Console.WriteLine("111111111111111111111111111111111111111");
+                Console.WriteLine("222222222222222222222222222222222222222");
                 while (true)
                 {
                     string one_json = redis.redis_client.PopItemFromList("testDocTranslateFileJsonList");
